@@ -29,6 +29,37 @@ class ProjectModel {
   static List<ProjectModel> projects = [
     ProjectModel(
       // project: "Flutter App",
+      title: "Edulens Educational",
+      description:"The Edulens platform program, which is a program to fully link between the teacher and the student to provide educational content remotely and to provide tests and summaries of the educational curricula at all academic levels",
+      appPhotos: AppConstants.edulens,
+      androidLink: "https://play.google.com/store/apps/details?id=com.edulens.edulens&fbclid=IwAR1FR_7qzsGPQwkvGGZKD7yIUXgGNNtFqT7OT8FEeOEalEa8sFY0NIWQCmQ",
+      appleLink: "https://apps.apple.com/eg/app/edulens/id1666623278",
+      githubLink: "",
+    ),  ProjectModel(
+      // project: "Flutter App",
+      title: "Hany Alnashar _ هاني النشار",
+      description:
+          "The program for the teacher named Hany Alnasher, which is a special program for a secondary teacher to help students provide explanations and submit monthly and weekly exams with the possibility of repetition and display the answer form, and provide a bank of questions for the subject for students to test themselves, there are summaries of the material, and attendance is recorded through the teacher’s control panel.",
+      appPhotos: AppConstants.hanyAlnshar,
+      androidLink: "https://play.google.com/store/apps/details?id=com.saif.hany_al_nashar_st",
+      appleLink: "https://apps.apple.com/eg/app/hany-alnashar-%D9%87%D8%A7%D9%86%D9%8A-%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B1/id6443819912",
+      githubLink: "",
+
+      // buttonText: "Github Link",
+    ),
+    // ProjectModel(
+    //   title: "Sherif AlBoghdady _ شريف البغدادي",
+    //   description:
+    //       "The teacher program named Sharif Al-Baghdadi, which is a special program for a secondary teacher to help students present the explanation, submit monthly and weekly exams with the possibility of repetition and display the answer form, and provide a bank of questions for the subject for students to test themselves, there are summaries of the material, and attendance is recorded through the teacher’s control panel.",
+    //   appPhotos: AppConstants.smartStoreImage,
+    //   androidLink: "https://play.google.com/store/apps/details?id=com.sharif_al_baghdadi.saif",
+    //   appleLink: "https://apps.apple.com/app/%D8%B4%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF%D9%8A-sherif-elboghdad/id1639825956",
+    //   githubLink: "",
+    //
+    //   // buttonText: "Github Link",
+    // ),
+    ProjectModel(
+      // project: "Flutter App",
       title: "Sherif AlBoghdady _ شريف البغدادي",
       description:
           "The teacher program named Sharif Al-Baghdadi, which is a special program for a secondary teacher to help students present the explanation, submit monthly and weekly exams with the possibility of repetition and display the answer form, and provide a bank of questions for the subject for students to test themselves, there are summaries of the material, and attendance is recorded through the teacher’s control panel.",

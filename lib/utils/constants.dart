@@ -51,6 +51,8 @@ class AppConstants {
 
   static const _projectsImages = _images + "projects/";
   static const smartStoreImage = _projectsImages + "1.jpeg";
+  static const hanyAlnshar = _projectsImages + "7.png";
+  static const edulens = _projectsImages + "6.png";
   static const crossTheRoadImage = _projectsImages + "2.jpeg";
   static const newsUpImage = _projectsImages + "3.jpeg";
   static const musicLabImage = _projectsImages + "4.jpeg";
