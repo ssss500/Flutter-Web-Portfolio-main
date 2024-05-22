@@ -31,24 +31,20 @@ Widget _buildUi(double width, BuildContext context) {
       defaultScale: false,
       child: LayoutBuilder(
         builder: (context, constraints) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Flex(
-                direction: Axis.horizontal,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 8.0),
-                    child: Text(
-                      "Developed by : Saif Ahmed ❤️",
-                      style: TextStyle(
-                        color: kCaptionColor,
-                      ),
-                    ),
+          return Flex(
+            direction: Axis.horizontal,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+
+              Padding(
+                padding: EdgeInsets.only(bottom: 8.0),
+                child: Text(
+                  "Developed by : Saif Ahmed ❤️",
+                  style: TextStyle(
+                    color: kCaptionColor,
                   ),
-                ],
-              )
+                ),
+              ),
             ],
           );
         },

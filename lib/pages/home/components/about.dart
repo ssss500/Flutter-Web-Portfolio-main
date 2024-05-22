@@ -28,7 +28,7 @@ class _AboutSectionState extends State<AboutSection> {
   Widget _buildUi(double width) {
     return Column(
       children: [
-        // const SizedBox(height: 100,),
+        const SizedBox(height: 100,),
         Center(
           child: LayoutBuilder(
             builder: (context, constraints) {
@@ -38,7 +38,7 @@ class _AboutSectionState extends State<AboutSection> {
                 defaultScale: false,
                 child: Flex(
                   direction:
-                      constraints.maxWidth > 720 ? Axis.horizontal : Axis.vertical,
+                  constraints.maxWidth > 720 ? Axis.horizontal : Axis.vertical,
                   children: [
 
                     const SizedBox(

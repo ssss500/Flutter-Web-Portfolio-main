@@ -16,6 +16,9 @@ import 'package:my_portfolio/utils/globals.dart';
 import 'package:my_portfolio/utils/screen_helper.dart';
 import 'package:my_portfolio/widgets/switch.dart';
 
+import '../../utils/constants.dart';
+import '../../utils/utils.dart';
+
 class Home extends ConsumerStatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -50,7 +53,11 @@ class _HomeState extends ConsumerState<Home>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: ScreenHelper.isDesktop(context) ? 30 :ScreenHelper.isTablet(context)? 70:20,
+                  height: ScreenHelper.isDesktop(context)
+                      ? 30
+                      : ScreenHelper.isTablet(context)
+                          ? 70
+                          : 20,
                 ),
                 Carousel(
                   key: _homeProvider.homeKey,
@@ -101,7 +108,71 @@ class _HomeState extends ConsumerState<Home>
                   child: PortfolioStats(),
                 ),
                 const SizedBox(
-                  height: 50.0,
+                  height: 40.0,
+                ),
+                Center(
+                  child: Text(
+                    "Fawry responsibility is limited to payment collection. For any related issue please contact us",
+                    style: TextStyle(
+                      fontSize: 16,
+
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextButton(
+                      onPressed: () {
+                         //open this link
+                        Utilty.openUrl("https://sites.google.com/view/terms-and-privac/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9");
+
+
+                      },
+                      child: Text(
+                        "Terms And Condition",
+                        style: TextStyle(
+                          color: ref.watch(themeProvider).isDarkMode
+                              ? Colors.white
+                              : Colors.black,
+                        ),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Utilty.openUrl("https://sites.google.com/view/sz40/privacy-policy");
+
+                      },
+                      child: Text(
+                        "Personal Policies",
+                        style: TextStyle(
+                          color: ref.watch(themeProvider).isDarkMode
+                              ? Colors.white
+                              : Colors.black,
+                        ),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Utilty.openUrl("https://sites.google.com/view/s400s/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9");
+                      },
+                      child: Text(
+                        "Refund Policy",
+                        style: TextStyle(
+                          color: ref.watch(themeProvider).isDarkMode
+                              ? Colors.white
+                              : Colors.black,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10.0,
                 ),
                 Footer(
                   key: _homeProvider.contactKey,

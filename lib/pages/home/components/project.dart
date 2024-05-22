@@ -31,11 +31,11 @@ class ProjectSection extends StatelessWidget {
         child: Row(
           children: projects
               .map((e) => Container(
-                  margin: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 15,
-                  ),
-                  child: _buildProject(width, e)))
+              margin: const EdgeInsets.symmetric(
+                horizontal: 20,
+                vertical: 15,
+              ),
+              child: _buildProject(width, e)))
               .toList(),
         ),
       ),

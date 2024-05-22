@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:my_portfolio/models/project.dart';
-import 'package:my_portfolio/pages/demo/components/demo_section.dart';
-import 'package:my_portfolio/pages/home/components/footer.dart';
-import 'package:my_portfolio/pages/home/components/header.dart';
-import 'package:my_portfolio/provider/home.dart';
-import 'package:my_portfolio/utils/screen_helper.dart';
+
+import '../../models/project.dart';
+import '../../provider/home.dart';
+import '../../utils/constants.dart';
+import '../../utils/screen_helper.dart';
+import '../home/components/footer.dart';
+import '../home/components/header.dart';
+import 'components/demo_section.dart';
 
 class DemoScreen extends ConsumerStatefulWidget {
   const DemoScreen({Key? key}) : super(key: key);
@@ -72,6 +74,7 @@ class _DemoScreenState extends ConsumerState<DemoScreen> {
                 DemoSection(
                   projects: ProjectModel.demos,
                 ),
+
                 const Footer()
               ],
             ),

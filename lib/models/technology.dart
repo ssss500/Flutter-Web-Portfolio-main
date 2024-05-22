@@ -1,4 +1,5 @@
-import 'package:my_portfolio/utils/constants.dart';
+
+import '../utils/constants.dart';
 
 class TechnologyModel {
   final String name;
